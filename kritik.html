@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Sekolah</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div id="page">
+        <header id="header">
+            <div id="section">
+                <a href="megaproyek.html">
+                    <img src="darjo.png" alt="Logo Sekolah">
+                </a>
+                <div class="school-info">
+                    <div class="center">
+                    <h1>SMK PERKAPALAN!!!</h1>
+                    <p>Belajar teknologi untuk membangun bangsa.</p>
+                </div>
+                </div>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="megaproyek.html">Beranda</a></li>
+                    <li><a href="profil.html">Profil</a></li>
+                    <li><a href="organisasi.html">Struktur Jabatan</a></li>
+                    <li><a href="demokrasiku.html">Demokrasi Sekolah</a></li>
+                    <li><a href="kritik.html">Kritik dan Saran</a></li>
+                    <li><a href="dev2orang.html">Developer</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <main id="content">
+            <div>
+                <form action="kritik.php" method="get">
+                    <h3>Kritik dan Saran</h3>
+                   <table>
+                    <tr>
+                        <td>Nama Kamu</td>
+                        <td>:</td>
+                        </tr>
+                        <tr><td><input type="text" name="nama" /></td>
+                    </tr>
+                    </table>
+                    <label for="komentar">Silahkan isi kritik dan saranmu:</label><br>
+                    <textarea name="komentar" id="komentar" cols="40" rows="5"></textarea><br>
+                    <input type="submit" name="submit" value="KIRIM">
+                </form>
+            </div>
+        </main>
+
+        <footer id="footer">
+            <p>&copy; 2025 Hak Cipta - Web Sekolah</p>
+        </footer>
+    </div>
+</body>
+
+</html>

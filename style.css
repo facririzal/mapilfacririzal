@@ -1,0 +1,103 @@
+/* style.css */
+
+body {
+    
+    background: #48b808 url(perkapalan.JPG) ;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat ;
+    color: #585858;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    margin: 0;
+    min-width: 960px;
+    .container {
+        text-align: center;
+      }
+}
+
+#page {
+    max-width: 1000px;
+    margin: 0 auto;
+    background-color: #ee7474;
+    box-shadow: 0 0 10px rgba(10, 88, 177, 0.1);
+    padding: 20px;
+}
+
+#header {
+    background-color: #003366;
+    color: #ffffff;
+    padding: 20px 0;
+    text-align: center;
+    border-radius: 10px 10px 0 0;
+}
+
+#header #section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    
+}
+
+#header img {
+    max-width: 150px;
+    height: auto;
+}
+
+#header span {
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+#header ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    background-color: #005f99;
+    border-radius: 0 0 10px 10px;
+}
+
+#header ul li {
+    margin: 0;
+}
+
+#header ul li a {
+    display: block;
+    padding: 10px 20px;
+    color: #ffffff;
+    transition: background-color 0.3s ease;
+}
+
+#header ul li a:hover,
+#header ul li.current a {
+    background-color: #004080;
+    
+}
+
+#content {
+    padding: 20px;
+    background-color: #e6e6e6;
+    border-radius: 10px;
+    margin-top: 20px;
+    
+}
+
+#content h3 {
+    margin-top: 0;
+    color: #003366;
+}
+
+footer {
+    background-color: #003366;
+    color: #ffffff;
+    text-align: center;
+    padding: 10px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    margin-top: 40px;
+    border-radius: 0 0 10px 10px;
+}

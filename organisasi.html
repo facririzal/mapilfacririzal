@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Sekolah</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .tree ul {
+            padding-top: 20px; 
+            position: relative;
+            text-align: center;
+            list-style-type: none;
+        }
+
+        .tree li {
+            display: inline-block;
+            vertical-align: top;
+            text-align: center;
+            list-style-type: none;
+            padding: 20px 5px 0 5px;
+            position: relative;
+        }
+
+        .tree li::before, .tree li::after {
+            content: '';
+            position: absolute; 
+            top: 0; 
+            right: 50%;
+            border-top: 3px solid #8d8888;
+            width: 50%; 
+            height: 20px;
+        }
+
+        .tree li::after {
+            right: auto; 
+            left: 50%;
+            border-left: 3px solid #8d8888;
+        }
+
+        .tree li:only-child::after, .tree li:only-child::before {
+            display: none;
+        }
+
+        .tree li:only-child { 
+            padding-top: 0;
+        }
+
+        .tree li:first-child::before, .tree li:last-child::after {
+            border: 0 none;
+        }
+
+        .tree li:last-child::before {
+            border-right: 3px solid #8d8888;
+            border-radius: 0 5px 0 0;
+        }
+
+        .tree li:first-child::after {
+            border-radius: 3px 0 0 0;
+        }
+
+        .tree ul ul::before {
+            content: '';
+            position: absolute; 
+            top: 0; 
+            left: 50%;
+            border-left: 3px solid #8d8888;
+            width: 0; 
+            height: 20px;
+        }
+
+        .tree li .person {
+            border: 2px solid #e2b0a3;
+            padding: 40px;
+            text-decoration: none;
+            color: #000000;
+            font-family: Arial, Verdana, Tahoma;
+            font-size: 12px;
+            display: inline-block;
+            border-radius: 5px;
+            transition: all 0.5s;
+            background: #928d8d;
+        }
+
+        .tree li .person:hover {
+            background: #fcef3eee; 
+            color: #0d21d8; 
+            border: 2px solid #2c1fe4;
+        }
+
+        .tree li .person img {
+            border-radius: 60%;
+            width: 70px;
+            height: 70px;
+            display: block;
+            margin: 0 auto 10px auto;
+        }
+
+        .tree li .person .name {
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+
+        .tree li .person .profile {
+            font-size: 10px;
+            color: #000000;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="page">
+        <header id="header">
+            <div id="section">
+                <a href="megaproyek.html">
+                    <img src="SMK BISA.jpg" alt="Logo Sekolah" class="middle">
+                </a>
+                
+                <div class="school-info">
+                    <div class="center">
+                        <h1 text-align="center">SMK Bisa!!!</h1>
+                        <p>Belajar teknologi untuk membangun bangsa.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <nav>
+                <ul>
+                    <li><a href="megaproyek.html">Beranda</a></li>
+                    <li><a href="profil.html">Profil</a></li>
+                    <li><a href="organisasi.html">Struktur Jabatan</a></li>
+                    <li><a href="demokrasiku.html">Demokrasi Sekolah</a></li>
+                    <li><a href="kritik.html">Kritik dan Saran</a></li>
+                    <li><a href="dev2orang.html">Developer</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <main id="content">
+            <div>
+                <h3>Jabatan Inti SMKN 3 BUDURAN</h3>
+                <h2>MASA JABATAN 2025/2030</h2>
+                <p>SMK BISA!!!</p>
+                <p>SMK HEBAT!!!</p>
+            </div>
+            <div class="tree">
+                <ul>
+                    <li>
+                        <div class="person">
+                            <img src="pakimam.jpg" alt="Kepala Sekolah">
+                            <div class="name">Imam Soetopo</div>
+                            <div class="profile">Kepala Sekolah</div>
+                        </div>
+                        <ul>
+                            <li>
+                                <div class="person">
+                                    <img src="gyokers.jpg" alt="Kesiswaan">
+                                    <div class="name">Rizal Kurniawan</div>
+                                    <div class="profile">Kesiswaan</div>
+                                </div>
+                                <ul>
+                                    <li>
+                                        <div class="person">
+                                            <img src="sgn.jpg" alt="Jepang">
+                                            <div class="name">Mulqi Anis</div>
+                                            <div class="profile">Guru Bahasa Jepang</div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="person">
+                                            <img src="jar.gif" alt="Employee 2">
+                                            <div class="name">Brian Al Rasyid</div>
+                                            <div class="profile">Guru Bahasa Jawa</div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <div class="person">
+                                    <img src="OIPbtr.jpg" alt="Tangan Kanan">
+                                    <div class="name">Facri Ramzi</div>
+                                    <div class="profile">Tangan Kanan</div>
+                                </div>
+                                <ul>
+                                    <li>
+                                        <div class="person">
+                                            <img src="jihyo.jpg" alt="English">
+                                            <div class="name">Jihyo</div>
+                                            <div class="profile">Guru Bahasa Inggris</div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="person">
+                                            <img src="jack.jpg" alt="Bisnis">
+                                            <div class="name">Daffa Mahendra</div>
+                                            <div class="profile">Guru Kewirausahaan</div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </main>
+
+        <footer id="footer">
+            <p>&copy; 2025 Hak Cipta - Web Sekolah</p>
+        </footer>
+    </div>
+</body>
+</html>
